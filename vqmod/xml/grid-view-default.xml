@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+
+<id>Grid View Default</id>
+<version>2.0.0</version>
+<vqmver>2.2.1</vqmver>
+<author>Jason Clark(mithereal@gmail.com</author>
+
+<file name="catalog/view/theme/*/template/product/category.tpl">
+<operation>
+<search position="before">
+<![CDATA[<?php echo $footer; ?>]]>
+</search>
+<add>
+<![CDATA[
+<script type="text/javascript">
+$(document).ready(function() { if(typeof display == 'function') { display('grid'); } });
+</script>
+]]>
+</add>
+</operation>       
+</file>
+
+</modification>
+
+
+
